@@ -1,0 +1,395 @@
+/*
+*Theme Name: Epitech pulse
+*Description: Epitech pulse test
+*Author: Constantin
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header_cities {
+    background: #000;
+    color: white;
+    padding: 10px;
+} 
+.cities {
+    margin: 0 auto;
+    width: fit-content;
+    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-size: 10px;
+    word-spacing: 9px;
+}
+.cities a {
+    text-decoration: none;
+    color: white;
+}
+
+.header_menu {
+    width: 57%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.header_menu .header_logo {
+    width: 45px;
+} 
+
+.header_logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.header_nav {
+    font-family: "Roboto",Sans-serif;
+}
+.header_nav .header_nav_list {
+    list-style: none;
+    display: flex;
+    font-size: 15px;
+    font-weight: 50;
+    position: relative;
+}
+.header_nav .header_nav_list li {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    height: 100%;
+}
+.header_nav .header_nav_list li .link {
+    text-decoration: none;
+    color: #0072BC;
+    cursor: grab;
+    display: flex;
+}
+.header_nav .header_nav_list li a {
+    text-decoration: none;
+    display: flex;
+}
+.header_nav .header_nav_list li:hover > .header_sub_menu {
+    display: block;
+}
+.header_sub_menu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    background: #025c96;
+    z-index: 999;
+    border-top: solid #E00229 2px;
+    font-size: 1.6vh;
+    cursor: pointer;
+    line-height: 30px;
+}
+.header_sub_menu li {
+    padding: 10px;
+    z-index: 9999;
+}
+.header_sub_menu li:hover {
+    background: #0b8ee6;
+}
+.header_sub_menu li a {
+   color: white;
+}
+.icon {
+    fill: #0072BC;
+    padding-top: 2px;
+    padding-left: 10px;
+}
+.header_menu button {
+    background: #0072BC;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+/* Main */
+.banner {
+    background: url("assets/images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 850px;
+    opacity: .8;
+    position: relative;
+    font-family: "Roboto",Sans-serif;
+}
+.banner_layer {
+    background: rgba(3, 122, 201, 0.877);
+    height: 100%;
+}
+.banner_content {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.banner_reference {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-weight: lighter;
+}
+
+.banner_reference img {
+   width: 150px;
+}
+.banner_reference p {
+    margin-top: 30px;
+}
+.banner_reference ul {
+    margin-top: 30px;
+    line-height: 30px;
+}
+.banner_discover {
+    width: 35%;
+}
+.banner_discover_layer {
+    background: rgba(255,255,255, 0.4);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.banner_discover p {
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    font-size: 2.2vh;
+}
+.banner_discover_meet {
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    border: solid white 2px;
+    background: transparent;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 1.7vh;
+}
+.banner_discover_experience {
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    border: solid white 1px;
+    background: #0072BC;
+    border: none;
+    cursor: pointer;
+    font-size: 1.7vh;
+}
+.banner_discover_experience:hover {
+    background: #0b8ee6;
+}
+.banner_discover button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Profils */
+.profils{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: "Roboto",Sans-serif;
+}
+.profils h4 {
+    color: #0072BC;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+.profils_cards {
+    width: 63%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.profil_bachelor_card {
+    background: #000;
+    color: white;
+    width: 32.8%;
+    height: 550px;
+}
+.profil_bachelor_card img {
+    width: 100%;
+    height: 45%;
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.profil_bachelor_card:hover img {
+    opacity: .7;
+    background-color: #0072BC;
+    cursor: pointer;
+}
+.profil_bachelor_card a {
+    color: #0072BC;
+    text-decoration: none;
+    font-size: 18px;
+}
+.profil_bachelor_card h5 {
+    color: #0072BC;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+.profil_bachelor_card p{
+    line-height: 25px;
+    height: auto;
+    font-size: 1.8vh;
+}
+.doc_bachelor_btn {
+    padding: 12px;
+    background: transparent;
+    color: white;
+    border: solid 1px;
+    width: 47%;
+    font-size: 1.5vh;
+    cursor: pointer;
+}
+.candidature_bachelor_btn {
+    padding: 12px;
+    background: #0072BC;
+    color: white;
+    border: none;
+    float: right;
+    width: 47%;
+    font-size: 1.5vh;
+    cursor: pointer;
+}
+
+
+.profil_master_card {
+    background: #000;
+    color: white;
+    width: 32.8%;
+    height: 550px;
+}
+.profil_master_card img {
+    width: 100%;
+    height: 45%;
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.profil_master_card:hover img {
+    opacity: .7;
+    background-color: #0072BC;
+    cursor: pointer;
+}
+.profil_master_card a {
+    color: #0072BC;
+    text-decoration: none;
+    font-size: 18px;
+}
+.profil_master_card h5 {
+    color: #0072BC;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+.profil_master_card p{
+    line-height: 25px;
+    height: auto;
+    font-size: 1.8vh;
+}
+.doc_master_btn {
+    padding: 12px;
+    background: transparent;
+    color: white;
+    border: solid 1px;
+    width: 47%;
+    font-size: 1.5vh;
+    cursor: pointer;
+}
+.candidature_master_btn {
+    padding: 12px;
+    background: #000;
+    color: white;
+    border: none;
+    float: right;
+    width: 47%;
+    font-size: 1.5vh;
+    cursor: pointer;
+}
+
+
+.profil_coding_card {
+    background: #000;
+    color: white;
+    width: 32.8%;
+    height: 550px;
+}
+.profil_coding_card img {
+    width: 100%;
+    height: 45%;
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.profil_coding_card:hover img {
+    opacity: .7;
+    background-color: #0072BC;
+    cursor: pointer;
+}
+.profil_coding_card a {
+    color: #E00229;
+    text-decoration: none;
+    font-size: 18px;
+}
+.profil_coding_card h5 {
+    color: #E00229;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+.profil_coding_card p {
+    line-height: 25px;
+    height: auto;
+    font-size: 1.8vh;
+}
+.doc_coding_btn {
+    padding: 12px;
+    background: transparent;
+    color: white;
+    border: solid 1px;
+    width: 47%;
+    font-size: 1.5vh;
+    cursor: pointer;
+}
+.candidature_coding_btn {
+    padding: 12px;
+    background: #E00229;
+    color: white;
+    border: none;
+    float: right;
+    width: 47%;
+    font-size: 1.5vh;
+    cursor: pointer;
+}
+
+.card_content {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card_buttons {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 28px;
+}

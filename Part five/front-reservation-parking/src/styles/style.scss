@@ -1,0 +1,20 @@
+@import './scss/form';
+
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.notification {
+    padding: 1rem;
+    max-width: 70%;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    border-radius: 0.5rem;
+    background-color: rgba(209, 234, 245, 0.288);
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
